@@ -88,8 +88,46 @@
 //     cout << "No of 1rs Notes are: " << count1 << endl;
 //     return 0;
 // }
+#include<iostream>
+using namespace std;
+int main(){
 
+    int amount;
+    cout<<"Enter the amount:"<<endl;
+    cin >> amount;
+    int currency=0;
+    int count50 = 0, count100 = 0, count20 = 0, count10 = 0;
 
+    if (amount>=100)
+    {
+        currency=100;
+        count100 = amount / 100;
+        amount = amount % 100;
+    }
+    if (amount>=50)
+    {
+        currency=50;
+        count50 = amount / 50;
+        amount = amount % 50;
+    }
+    if (amount>=20)
+    {
+        currency = 20;
+        count20 = amount / 20;
+        amount = amount % 20;
+    }
+    if (amount>=10)
+    {
+        currency = 10;
+        count10 = amount / 10;
+        amount = amount % 10;
+    }
+    cout << "the number of 100 rs note is: " << count100 << endl;
+    cout << "the number of 50 rs note is: " << count50 << endl;
+    cout << "the number of 20 rs note is: " << count20 << endl;
+    cout << "the number of 10 rs note is: " << count10 << endl;
+    return 0;
+}
 
 
 
