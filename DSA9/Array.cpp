@@ -48,4 +48,24 @@
 // }
 
 
+// should be accessed within its size
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     int number[15];
+//     //accessing random values of array
+//     cout << endl;
+//     cout << "the value at 0th index is: " << number[0] << endl;
+//     cout << "the value at 14th index is: " << number[14] << endl;
+//     // cout << "the value at 20th index is: " << number[20] << endl;//error
+//     cout << endl;
+
+//     //initializing
+//     int second[3]={4,7,8};
+//     cout << "the value at second index is: " << second[2] << endl;
+//     cout << endl;
+//     cout << "everything is fine and code is working properly" << endl;
+//     return 0;
+// }
 
