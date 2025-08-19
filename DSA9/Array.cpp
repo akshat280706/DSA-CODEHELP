@@ -69,3 +69,38 @@
 //     return 0;
 // }
 
+//using functions
+#include<iostream>
+using namespace std;
+void printArray(int arr[], int size){
+    cout << endl;
+    cout << "printing the array: " << endl;
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i];
+    }
+    cout << endl;
+    cout << "printing done "<<endl;
+}
+int main(){
+
+    //declare
+    int third[15] = {2, 7};
+    int n= 15;
+    //accessing an array
+    printArray(third, 10);
+
+    int fourth[10] = {0};
+    printArray(fourth, 10);
+
+    int fifth[10]={1};
+    printArray(fifth, 10);
+
+    int fifthsize=sizeof(fifth)/sizeof(int);
+    cout << "the size of fifth is: " << fifthsize << endl;
+    
+    return 0;
+
+}
+
+
