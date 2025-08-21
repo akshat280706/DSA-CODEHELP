@@ -2,7 +2,6 @@
 using namespace std;
 
 int getMIN(int num[], int n){
-
     int min = num[0];
     for (int i = 0; i < n; i++)
     {
@@ -40,6 +39,5 @@ int main(){
     cout << endl;
     cout << "maximum value is: " << getMax(num, size) << endl;
     cout << "minimum value is: " << getMIN(num, size) << endl;
-
     return 0;
 }
