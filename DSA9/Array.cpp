@@ -98,9 +98,15 @@ int main(){
 
     int fifthsize=sizeof(fifth)/sizeof(int);
     cout << "the size of fifth is: " << fifthsize << endl;
-    
-    return 0;
 
+    cout << endl;
+    char ch[5] = {'a', 'b', 'f', 'd', 't'};
+    cout << ch[3] << endl;
+    cout << ch[4] << endl;
+
+    cout << endl;
+    cout << "the code is working fine" << endl;
+    return 0;
 }
 
 
