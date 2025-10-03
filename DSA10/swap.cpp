@@ -39,3 +39,9 @@ int main(){
 
     return 0;
 }
+
+// if wanted to swap two values the we'll store them in a temp varaible
+// eg to swap arr[0] and arr[1]
+// int temp=arr[1];
+// arr[1]=arr[0];
+// arr[0]=temp;
