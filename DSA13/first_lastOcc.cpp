@@ -56,3 +56,5 @@ int main(){
 
     return 0;
 }
+
+// TOTAL NUMBER OF OCCURENCE= (last index-first index)+1
