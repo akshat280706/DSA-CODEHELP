@@ -18,7 +18,7 @@
 //     if (i==-1){
 //         return;
 //     }
-//     for (int j = i+1; j < n-1; j++)
+//     for (int j = i+1; j < n; j++)
 //     {
 //         if (arr[j]!=0)
 //         {
@@ -69,7 +69,7 @@ void moveZeros(vector<int>&arr, int n)
     if (i==-1){
         return;
     }
-    for (int j = i+1; j < n-1; j++)
+    for (int j = i+1; j < n; j++)
     {
         if (arr[j]!=0)
         {
