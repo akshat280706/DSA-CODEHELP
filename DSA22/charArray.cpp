@@ -17,3 +17,28 @@
 //     cout << "your name is: " << name << endl;
 //     return 0;
 // }
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int totalLength(char name[]){
+    int count=0;
+    for (int i = 0; name[i]!='\0'; i++){
+        count++;
+    }
+    return count;
+}
+
+
+int main(){
+    char name[20];
+    cout<<"enter your name: ";
+    cin>>name;
+    cout << "your name is: " << name << endl;
+    int ans = totalLength(name);
+    cout<<endl;
+    cout << "the length of the typed string is:" << ans << endl;
+
+    return 0;
+}
