@@ -39,3 +39,41 @@ using namespace std;
 
 //     return 0;
 // }
+
+
+
+
+
+
+
+
+int newSum(vector<int>nums){
+    unordered_set<int> st;
+    int sum = 0;
+    for (int i = 0; i < nums.size();i++){
+        while(st.count(nums[i])) nums[i]++;
+        st.insert(nums[i]);
+        sum += nums[i];
+    }
+    return sum;
+}
+
+
+int main() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+
+    vector<int> arr(n);
+
+    cout << "Enter " << n << " elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    int ans = newSum(arr);
+
+    cout << "Result: " << ans << endl;
+
+    return 0;
+}
